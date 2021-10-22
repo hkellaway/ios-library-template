@@ -25,11 +25,14 @@
 //
 //
 
+import LibraryTemplate
 import SwiftUI
 
 struct ContentView: View {
+    let deleteMe = DELETE_ME()
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(deleteMe.speak())
             .padding()
     }
 }

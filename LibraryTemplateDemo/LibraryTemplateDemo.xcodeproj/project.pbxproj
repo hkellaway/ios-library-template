@@ -11,6 +11,7 @@
 		DC373193272374F10091C0AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC373192272374F10091C0AF /* ContentView.swift */; };
 		DC373195272374F30091C0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373194272374F30091C0AF /* Assets.xcassets */; };
 		DC373198272374F30091C0AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373197272374F30091C0AF /* Preview Assets.xcassets */; };
+		DC3731AB272378C60091C0AF /* LibraryTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = DC3731AA272378C60091C0AF /* LibraryTemplate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3731AB272378C60091C0AF /* LibraryTemplate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			);
 			name = LibraryTemplateDemo;
 			packageProductDependencies = (
+				DC3731AA272378C60091C0AF /* LibraryTemplate */,
 			);
 			productName = LibraryTemplateDemo;
 			productReference = DC37318D272374F10091C0AF /* LibraryTemplateDemo.app */;
@@ -114,6 +117,7 @@
 			);
 			mainGroup = DC373184272374F10091C0AF;
 			packageReferences = (
+				DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */,
 			);
 			productRefGroup = DC37318E272374F10091C0AF /* Products */;
 			projectDirPath = "";
@@ -347,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/ios-library-template";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC3731AA272378C60091C0AF /* LibraryTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */;
+			productName = LibraryTemplate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC373185272374F10091C0AF /* Project object */;
 }
