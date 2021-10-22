@@ -28,6 +28,8 @@
 import Foundation
 
 public struct DELETE_ME {
+    public init() { }
+    
     public func speak() -> String {
         return "Hello, World!"
     }
