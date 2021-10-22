@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC37316927236F7F0091C0AF /* LibraryTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37316027236F7F0091C0AF /* LibraryTemplate.framework */; };
-		DC37316E27236F7F0091C0AF /* LibraryTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37316D27236F7F0091C0AF /* LibraryTemplateTests.swift */; };
-		DC37316F27236F7F0091C0AF /* LibraryTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC37316327236F7F0091C0AF /* LibraryTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC3731792723706C0091C0AF /* DELETE_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731782723706C0091C0AF /* DELETE_ME.swift */; };
+		DC37317D272371ED0091C0AF /* LibraryTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37317C272371ED0091C0AF /* LibraryTemplateTests.swift */; };
+		DC373181272372520091C0AF /* DELETE_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37317E272371FA0091C0AF /* DELETE_ME.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +24,10 @@
 
 /* Begin PBXFileReference section */
 		DC37316027236F7F0091C0AF /* LibraryTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC37316327236F7F0091C0AF /* LibraryTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryTemplate.h; sourceTree = "<group>"; };
 		DC37316827236F7F0091C0AF /* LibraryTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC37316D27236F7F0091C0AF /* LibraryTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTemplateTests.swift; sourceTree = "<group>"; };
-		DC3731782723706C0091C0AF /* DELETE_ME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETE_ME.swift; sourceTree = "<group>"; };
+		DC37317C272371ED0091C0AF /* LibraryTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryTemplateTests.swift; path = Tests/LibraryTemplateTests/LibraryTemplateTests.swift; sourceTree = "<group>"; };
+		DC37317E272371FA0091C0AF /* DELETE_ME.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DELETE_ME.swift; path = Sources/LibraryTemplate/DELETE_ME.swift; sourceTree = "<group>"; };
+		DC37317F272371FA0091C0AF /* LibraryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryTemplate.h; path = Sources/LibraryTemplate/LibraryTemplate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +52,8 @@
 		DC37315627236F7F0091C0AF = {
 			isa = PBXGroup;
 			children = (
-				DC37316227236F7F0091C0AF /* LibraryTemplate */,
-				DC37316C27236F7F0091C0AF /* LibraryTemplateTests */,
+				DC37317A272371C90091C0AF /* Sources */,
+				DC37317B272371CE0091C0AF /* Tests */,
 				DC37316127236F7F0091C0AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,21 +67,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC37316227236F7F0091C0AF /* LibraryTemplate */ = {
+		DC37317A272371C90091C0AF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DC37316327236F7F0091C0AF /* LibraryTemplate.h */,
-				DC3731782723706C0091C0AF /* DELETE_ME.swift */,
+				DC37317E272371FA0091C0AF /* DELETE_ME.swift */,
+				DC37317F272371FA0091C0AF /* LibraryTemplate.h */,
 			);
-			path = LibraryTemplate;
+			name = Sources;
 			sourceTree = "<group>";
 		};
-		DC37316C27236F7F0091C0AF /* LibraryTemplateTests */ = {
+		DC37317B272371CE0091C0AF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DC37316D27236F7F0091C0AF /* LibraryTemplateTests.swift */,
+				DC37317C272371ED0091C0AF /* LibraryTemplateTests.swift */,
 			);
-			path = LibraryTemplateTests;
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +91,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC37316F27236F7F0091C0AF /* LibraryTemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +149,7 @@
 					};
 					DC37316727236F7F0091C0AF = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -195,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3731792723706C0091C0AF /* DELETE_ME.swift in Sources */,
+				DC373181272372520091C0AF /* DELETE_ME.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC37316E27236F7F0091C0AF /* LibraryTemplateTests.swift in Sources */,
+				DC37317D272371ED0091C0AF /* LibraryTemplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G58XPAD97M;
@@ -420,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.LibraryTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G58XPAD97M;
