@@ -1,6 +1,6 @@
 //
 //
-//  LibraryTemplateTests.swift
+//  DELETE_ME.swift
 //  LibraryTemplate
 //
 // Copyright (c) 2021
@@ -25,13 +25,10 @@
 //
 //
 
-import XCTest
-@testable import LibraryTemplate
+import Foundation
 
-class LibraryTemplateTests: XCTestCase {
-
-    func test_DELETE_ME() {
-        XCTAssertEqual(DELETE_ME().speak(), "Hello, World!")
+public struct DELETE_ME {
+    public func speak() -> String {
+        return "Hello, World!"
     }
-
 }

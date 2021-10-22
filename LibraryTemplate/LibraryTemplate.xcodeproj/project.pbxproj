@@ -10,6 +10,7 @@
 		DC37316927236F7F0091C0AF /* LibraryTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37316027236F7F0091C0AF /* LibraryTemplate.framework */; };
 		DC37316E27236F7F0091C0AF /* LibraryTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37316D27236F7F0091C0AF /* LibraryTemplateTests.swift */; };
 		DC37316F27236F7F0091C0AF /* LibraryTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC37316327236F7F0091C0AF /* LibraryTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC3731792723706C0091C0AF /* DELETE_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731782723706C0091C0AF /* DELETE_ME.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		DC37316327236F7F0091C0AF /* LibraryTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryTemplate.h; sourceTree = "<group>"; };
 		DC37316827236F7F0091C0AF /* LibraryTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC37316D27236F7F0091C0AF /* LibraryTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTemplateTests.swift; sourceTree = "<group>"; };
+		DC3731782723706C0091C0AF /* DELETE_ME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETE_ME.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DC37316327236F7F0091C0AF /* LibraryTemplate.h */,
+				DC3731782723706C0091C0AF /* DELETE_ME.swift */,
 			);
 			path = LibraryTemplate;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					DC37315F27236F7F0091C0AF = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					DC37316727236F7F0091C0AF = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3731792723706C0091C0AF /* DELETE_ME.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		DC37317327236F7F0091C0AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -360,6 +366,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +375,7 @@
 		DC37317427236F7F0091C0AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -398,6 +406,7 @@
 		DC37317627236F7F0091C0AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G58XPAD97M;
@@ -419,6 +428,7 @@
 		DC37317727236F7F0091C0AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G58XPAD97M;
