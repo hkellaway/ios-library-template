@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "LibraryTemplate"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0-beta"
   s.summary          = "Template for creating a new iOS library"
   s.description      = "Template for creating a new iOS library."
   s.homepage         = "TODO"
