@@ -3,8 +3,8 @@
 Template for creating a new iOS library.
 
 [![Swift](https://img.shields.io/badge/Swift-5.5-orange.svg)](https://swift.org/about/)
-[![Swift Package Manager supported](https://img.shields.io/badge/SPM-supported-green.svg)](https://swift.org/package-manager/)
-[![CocoaPods supported](https://img.shields.io/badge/pod-supported-green.svg)](https://cocoapods.org/about) 
+[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-orange.svg)](https://swift.org/package-manager/)
+[![CocoaPods compatible](https://img.shields.io/badge/pod-compatible-blue.svg)](https://cocoapods.org/about) 
 [![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://raw.githubusercontent.com/hkellaway/ios-library-template/main/LICENSE)
 [![Build](https://github.com/hkellaway/ios-library-template/actions/workflows/build.yml/badge.svg)](https://github.com/hkellaway/ios-library-template/actions/workflows/build.yml)
 
