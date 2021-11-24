@@ -5,8 +5,8 @@
         "package": "LibraryTemplate",
         "repositoryURL": "https://github.com/hkellaway/ios-library-template",
         "state": {
-          "branch": "main",
-          "revision": "73b4d35fe25904132769d5759619f1dc29b311b1",
+          "branch": "networking",
+          "revision": "25ecdbac5488963d60b35e917d4543f64e50f9b9",
           "version": null
         }
       }

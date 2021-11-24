@@ -1,9 +1,9 @@
 name: Build
 on: 
   push:
-    branches: [main]
+    branches: [main, networking]
   pull_request:
-    branches: [main]
+    branches: [main, networking]
 jobs:
   build:
     runs-on: [macos-latest]

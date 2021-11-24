@@ -11,6 +11,10 @@
 		DC3731C327237DED0091C0AF /* LibraryTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3731C127237DED0091C0AF /* LibraryTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3731C427237DED0091C0AF /* DELETE_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731C227237DED0091C0AF /* DELETE_ME.swift */; };
 		DC3731C827237DFB0091C0AF /* LibraryTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731C627237DF60091C0AF /* LibraryTemplateTests.swift */; };
+		DC3731E2274EB1030091C0AF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731E1274EB1030091C0AF /* Networking.swift */; };
+		DC3731E5274EB3800091C0AF /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731E3274EB37D0091C0AF /* NetworkingTests.swift */; };
+		DC3731E9274EC4220091C0AF /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731E7274EC41E0091C0AF /* MockURLSession.swift */; };
+		DC3731EB274EC4430091C0AF /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731EA274EC4430091C0AF /* MockModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		DC3731C127237DED0091C0AF /* LibraryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryTemplate.h; sourceTree = "<group>"; };
 		DC3731C227237DED0091C0AF /* DELETE_ME.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DELETE_ME.swift; sourceTree = "<group>"; };
 		DC3731C627237DF60091C0AF /* LibraryTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTemplateTests.swift; sourceTree = "<group>"; };
+		DC3731E1274EB1030091C0AF /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DC3731E3274EB37D0091C0AF /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		DC3731E7274EC41E0091C0AF /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		DC3731EA274EC4430091C0AF /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			children = (
 				DC3731C127237DED0091C0AF /* LibraryTemplate.h */,
 				DC3731C227237DED0091C0AF /* DELETE_ME.swift */,
+				DC3731E1274EB1030091C0AF /* Networking.swift */,
 			);
 			name = LibraryTemplate;
 			path = Sources/LibraryTemplate;
@@ -81,10 +90,21 @@
 		DC3731C527237DF60091C0AF /* LibraryTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC3731E6274EC40D0091C0AF /* Mocks */,
 				DC3731C627237DF60091C0AF /* LibraryTemplateTests.swift */,
+				DC3731E3274EB37D0091C0AF /* NetworkingTests.swift */,
 			);
 			name = LibraryTemplateTests;
 			path = Sources/LibraryTemplateTests;
+			sourceTree = "<group>";
+		};
+		DC3731E6274EC40D0091C0AF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DC3731EA274EC4430091C0AF /* MockModel.swift */,
+				DC3731E7274EC41E0091C0AF /* MockURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3731EB274EC4430091C0AF /* MockModel.swift in Sources */,
 				DC3731C427237DED0091C0AF /* DELETE_ME.swift in Sources */,
+				DC3731E2274EB1030091C0AF /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3731E9274EC4220091C0AF /* MockURLSession.swift in Sources */,
 				DC3731C827237DFB0091C0AF /* LibraryTemplateTests.swift in Sources */,
+				DC3731E5274EB3800091C0AF /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

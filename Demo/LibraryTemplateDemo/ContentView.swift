@@ -28,12 +28,62 @@
 import LibraryTemplate
 import SwiftUI
 
+struct ToDo: Codable {
+    let id: Int
+    let title: String
+    let completed: Bool
+}
+
+enum RemoteData<T: Decodable> {
+    case loading
+    case loaded(model: T)
+    case errored(error: NetworkingError)
+    
+    static func fromNetworkRequest(_ requestResult: Result<T, NetworkingError>) -> RemoteData<T> {
+        switch requestResult {
+        case .success(let model):
+            return .loaded(model: model)
+        case .failure(let error):
+            return .errored(error: error)
+        }
+    }
+}
+
+class PlaceholderAPI: ObservableObject {
+    @Published var data: RemoteData<ToDo> = .loading
+    
+    let networking: Networking
+    
+    init?() {
+        guard let networking = Networking(baseUrl: "jsonplaceholder.typicode.com") else {
+            return nil
+        }
+        self.networking = networking
+    }
+    
+    func load() {
+        self.networking.get(model: ToDo.self, path: "/todos/1") { [weak self] result in
+            DispatchQueue.main.async {
+                self?.data = .fromNetworkRequest(result)
+            }
+        }
+    }
+}
+
 struct ContentView: View {
-    let deleteMe = DELETE_ME()
+    @ObservedObject private(set) var api = PlaceholderAPI()!
+    
+    var text: String {
+        switch api.data {
+        case .loading: return "Loading..."
+        case .loaded(let model): return model.title
+        case .errored(let error): return error.localizedDescription
+        }
+    }
     
     var body: some View {
-        Text(deleteMe.speak())
-            .padding()
+        Text(self.text)
+            .onAppear(perform: api.load)
     }
 }
 

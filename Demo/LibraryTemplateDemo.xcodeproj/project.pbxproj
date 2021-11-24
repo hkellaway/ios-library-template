@@ -357,7 +357,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hkellaway/ios-library-template";
 			requirement = {
-				branch = main;
+				branch = networking;
 				kind = branch;
 			};
 		};
