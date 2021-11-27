@@ -7,16 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1495A4D66570EF9D3322D612 /* Pods_LibraryTemplateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A8F4AC6C68C1C1CF8AF89 /* Pods_LibraryTemplateDemo.framework */; };
 		DC373191272374F10091C0AF /* LibraryTemplateDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC373190272374F10091C0AF /* LibraryTemplateDemoApp.swift */; };
 		DC373193272374F10091C0AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC373192272374F10091C0AF /* ContentView.swift */; };
 		DC373195272374F30091C0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373194272374F30091C0AF /* Assets.xcassets */; };
 		DC373198272374F30091C0AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373197272374F30091C0AF /* Preview Assets.xcassets */; };
-		DC3731AB272378C60091C0AF /* LibraryTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = DC3731AA272378C60091C0AF /* LibraryTemplate */; };
 		DC3731EF274ED9760091C0AF /* PinballMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */; };
 		DC3731F1274EFDB30091C0AF /* AppStateContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */; };
+		DCDCA88D2751D53400D6A683 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDCA88C2751D53400D6A683 /* WidgetKit.framework */; };
+		DCDCA88F2751D53400D6A683 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDCA88E2751D53400D6A683 /* SwiftUI.framework */; };
+		DCDCA8922751D53400D6A683 /* PinballMapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCA8912751D53400D6A683 /* PinballMapWidget.swift */; };
+		DCDCA8952751D53600D6A683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDCA8942751D53600D6A683 /* Assets.xcassets */; };
+		DCDCA8972751D53600D6A683 /* PinballMapWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DCDCA8932751D53500D6A683 /* PinballMapWidget.intentdefinition */; };
+		DCDCA8982751D53600D6A683 /* PinballMapWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DCDCA8932751D53500D6A683 /* PinballMapWidget.intentdefinition */; };
+		DCDCA89B2751D53600D6A683 /* PinballMapWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCDCA88B2751D53400D6A683 /* PinballMapWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DCDCA8992751D53600D6A683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC373185272374F10091C0AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDCA88A2751D53400D6A683;
+			remoteInfo = PinballMapWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCDCA89C2751D53600D6A683 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCDCA89B2751D53600D6A683 /* PinballMapWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		10598775E82BC74CDFBCE376 /* Pods-LibraryTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-LibraryTemplateDemo/Pods-LibraryTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A90A8F4AC6C68C1C1CF8AF89 /* Pods_LibraryTemplateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryTemplateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC348E2C080641C382A8E532 /* Pods-LibraryTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-LibraryTemplateDemo/Pods-LibraryTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DC37318D272374F10091C0AF /* LibraryTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC373190272374F10091C0AF /* LibraryTemplateDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTemplateDemoApp.swift; sourceTree = "<group>"; };
 		DC373192272374F10091C0AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +58,14 @@
 		DC373197272374F30091C0AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinballMapAPI.swift; sourceTree = "<group>"; };
 		DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateContainer.swift; sourceTree = "<group>"; };
+		DC3731F2274F038D0091C0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DCDCA88B2751D53400D6A683 /* PinballMapWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinballMapWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDCA88C2751D53400D6A683 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DCDCA88E2751D53400D6A683 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DCDCA8912751D53400D6A683 /* PinballMapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinballMapWidget.swift; sourceTree = "<group>"; };
+		DCDCA8932751D53500D6A683 /* PinballMapWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PinballMapWidget.intentdefinition; sourceTree = "<group>"; };
+		DCDCA8942751D53600D6A683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCDCA8962751D53600D6A683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,18 +73,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3731AB272378C60091C0AF /* LibraryTemplate in Frameworks */,
+				1495A4D66570EF9D3322D612 /* Pods_LibraryTemplateDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDCA8882751D53400D6A683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDCA88F2751D53400D6A683 /* SwiftUI.framework in Frameworks */,
+				DCDCA88D2751D53400D6A683 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028B37D2189F3F11533F2586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90A8F4AC6C68C1C1CF8AF89 /* Pods_LibraryTemplateDemo.framework */,
+				DCDCA88C2751D53400D6A683 /* WidgetKit.framework */,
+				DCDCA88E2751D53400D6A683 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7731D3851155FD1D74B39ECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10598775E82BC74CDFBCE376 /* Pods-LibraryTemplateDemo.debug.xcconfig */,
+				AC348E2C080641C382A8E532 /* Pods-LibraryTemplateDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC373184272374F10091C0AF = {
 			isa = PBXGroup;
 			children = (
 				DC37318F272374F10091C0AF /* LibraryTemplateDemo */,
+				DCDCA8902751D53400D6A683 /* PinballMapWidget */,
 				DC37318E272374F10091C0AF /* Products */,
+				7731D3851155FD1D74B39ECF /* Pods */,
+				028B37D2189F3F11533F2586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DC37318D272374F10091C0AF /* LibraryTemplateDemo.app */,
+				DCDCA88B2751D53400D6A683 /* PinballMapWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +136,7 @@
 				DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */,
 				DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */,
 				DC373194272374F30091C0AF /* Assets.xcassets */,
+				DC3731F2274F038D0091C0AF /* Info.plist */,
 				DC373196272374F30091C0AF /* Preview Content */,
 			);
 			path = LibraryTemplateDemo;
@@ -75,6 +150,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DCDCA8902751D53400D6A683 /* PinballMapWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DCDCA8912751D53400D6A683 /* PinballMapWidget.swift */,
+				DCDCA8932751D53500D6A683 /* PinballMapWidget.intentdefinition */,
+				DCDCA8942751D53600D6A683 /* Assets.xcassets */,
+				DCDCA8962751D53600D6A683 /* Info.plist */,
+			);
+			path = PinballMapWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,21 +168,41 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC37319B272374F30091C0AF /* Build configuration list for PBXNativeTarget "LibraryTemplateDemo" */;
 			buildPhases = (
+				74C9C2505A67B02060D771A7 /* [CP] Check Pods Manifest.lock */,
 				DC373189272374F10091C0AF /* Sources */,
 				DC37318A272374F10091C0AF /* Frameworks */,
 				DC37318B272374F10091C0AF /* Resources */,
+				A3CD07B72F0189EBB375E0DF /* [CP] Embed Pods Frameworks */,
+				DCDCA89C2751D53600D6A683 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCDCA89A2751D53600D6A683 /* PBXTargetDependency */,
+			);
+			name = LibraryTemplateDemo;
+			packageProductDependencies = (
+			);
+			productName = LibraryTemplateDemo;
+			productReference = DC37318D272374F10091C0AF /* LibraryTemplateDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCDCA88A2751D53400D6A683 /* PinballMapWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDCA89F2751D53600D6A683 /* Build configuration list for PBXNativeTarget "PinballMapWidgetExtension" */;
+			buildPhases = (
+				DCDCA8872751D53400D6A683 /* Sources */,
+				DCDCA8882751D53400D6A683 /* Frameworks */,
+				DCDCA8892751D53400D6A683 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LibraryTemplateDemo;
-			packageProductDependencies = (
-				DC3731AA272378C60091C0AF /* LibraryTemplate */,
-			);
-			productName = LibraryTemplateDemo;
-			productReference = DC37318D272374F10091C0AF /* LibraryTemplateDemo.app */;
-			productType = "com.apple.product-type.application";
+			name = PinballMapWidgetExtension;
+			productName = PinballMapWidgetExtension;
+			productReference = DCDCA88B2751D53400D6A683 /* PinballMapWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -111,6 +217,9 @@
 					DC37318C272374F10091C0AF = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					DCDCA88A2751D53400D6A683 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = DC373188272374F10091C0AF /* Build configuration list for PBXProject "LibraryTemplateDemo" */;
@@ -123,13 +232,13 @@
 			);
 			mainGroup = DC373184272374F10091C0AF;
 			packageReferences = (
-				DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */,
 			);
 			productRefGroup = DC37318E272374F10091C0AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DC37318C272374F10091C0AF /* LibraryTemplateDemo */,
+				DCDCA88A2751D53400D6A683 /* PinballMapWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -144,13 +253,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCDCA8892751D53400D6A683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDCA8952751D53600D6A683 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74C9C2505A67B02060D771A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibraryTemplateDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3CD07B72F0189EBB375E0DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibraryTemplateDemo/Pods-LibraryTemplateDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibraryTemplateDemo/Pods-LibraryTemplateDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibraryTemplateDemo/Pods-LibraryTemplateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC373189272374F10091C0AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDCA8982751D53600D6A683 /* PinballMapWidget.intentdefinition in Sources */,
 				DC3731F1274EFDB30091C0AF /* AppStateContainer.swift in Sources */,
 				DC3731EF274ED9760091C0AF /* PinballMapAPI.swift in Sources */,
 				DC373193272374F10091C0AF /* ContentView.swift in Sources */,
@@ -158,7 +318,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCDCA8872751D53400D6A683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDCA8972751D53600D6A683 /* PinballMapWidget.intentdefinition in Sources */,
+				DCDCA8922751D53400D6A683 /* PinballMapWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCDCA89A2751D53600D6A683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCDCA88A2751D53400D6A683 /* PinballMapWidgetExtension */;
+			targetProxy = DCDCA8992751D53600D6A683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DC373199272374F30091C0AF /* Debug */ = {
@@ -279,7 +456,9 @@
 		};
 		DC37319C272374F30091C0AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10598775E82BC74CDFBCE376 /* Pods-LibraryTemplateDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +467,8 @@
 				DEVELOPMENT_TEAM = G58XPAD97M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibraryTemplateDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +490,9 @@
 		};
 		DC37319D272374F30091C0AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC348E2C080641C382A8E532 /* Pods-LibraryTemplateDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +501,8 @@
 				DEVELOPMENT_TEAM = G58XPAD97M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibraryTemplateDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +516,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.LibraryTemplateDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCDCA89D2751D53600D6A683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58XPAD97M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinballMapWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PinballMapWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.LibraryTemplateDemo.PinballMapWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCDCA89E2751D53600D6A683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58XPAD97M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinballMapWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PinballMapWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.LibraryTemplateDemo.PinballMapWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,26 +599,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DCDCA89F2751D53600D6A683 /* Build configuration list for PBXNativeTarget "PinballMapWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDCA89D2751D53600D6A683 /* Debug */,
+				DCDCA89E2751D53600D6A683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hkellaway/ios-library-template";
-			requirement = {
-				branch = networking;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DC3731AA272378C60091C0AF /* LibraryTemplate */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DC3731A9272378C60091C0AF /* XCRemoteSwiftPackageReference "ios-library-template" */;
-			productName = LibraryTemplate;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC373185272374F10091C0AF /* Project object */;
 }

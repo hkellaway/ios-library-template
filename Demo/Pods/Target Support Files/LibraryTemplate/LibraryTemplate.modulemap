@@ -1,0 +1,6 @@
+framework module LibraryTemplate {
+  umbrella header "LibraryTemplate-umbrella.h"
+
+  export *
+  module * { export * }
+}

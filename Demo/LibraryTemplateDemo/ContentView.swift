@@ -25,70 +25,80 @@
 //
 //
 
+import CoreLocation
 import LibraryTemplate
 import SwiftUI
 
-struct ToDo: Codable {
-    let id: Int
-    let title: String
-    let completed: Bool
-}
-
-enum RemoteData<T: Decodable> {
-    case loading
-    case loaded(model: T)
-    case errored(error: NetworkingError)
-    
-    static func fromNetworkRequest(_ requestResult: Result<T, NetworkingError>) -> RemoteData<T> {
-        switch requestResult {
-        case .success(let model):
-            return .loaded(model: model)
-        case .failure(let error):
-            return .errored(error: error)
-        }
-    }
-}
-
-class PlaceholderAPI: ObservableObject {
-    @Published var data: RemoteData<ToDo> = .loading
-    
-    let networking: Networking
-    
-    init?() {
-        guard let networking = Networking(baseUrl: "jsonplaceholder.typicode.com") else {
-            return nil
-        }
-        self.networking = networking
-    }
-    
-    func load() {
-        self.networking.get(model: ToDo.self, path: "/todos/1") { [weak self] result in
-            DispatchQueue.main.async {
-                self?.data = .fromNetworkRequest(result)
-            }
-        }
-    }
-}
-
 struct ContentView: View {
-    @ObservedObject private(set) var api = PlaceholderAPI()!
+    @EnvironmentObject var appState: AppStateContainer
     
-    var text: String {
-        switch api.data {
-        case .loading: return "Loading..."
-        case .loaded(let model): return model.title
-        case .errored(let error): return error.localizedDescription
-        }
-    }
+    let currentUser: User
+    
+    private let regionToCheck = "nyc"
+    private let locationToFave = 2577 // B61
     
     var body: some View {
-        Text(self.text)
-            .onAppear(perform: api.load)
+        VStack {
+            Text("Hello, \(self.currentUser.username) (\(self.currentUser.id))!")
+            switch appState.regionList {
+            case .undefined, .loading:
+                Text("Loading...")
+            case .errored(let error):
+                Text(error.localizedDescription)
+            case .loaded(let regionList):
+                let letter = "n"
+                let filtered = regionList.regions.filter { $0.name.lowercased().hasPrefix(letter) }
+                VStack {
+                    if let lastRegionChecked = self.appState.lastCheckedRegion.value {
+                        Text("Last region checked: \(lastRegionChecked.name)")
+                    } else {
+                        Text("Last region checked: undefined")
+                    }
+                    Text("Location Auth Status: \(self.appState.locationAuthStatus.description)")
+                    Text("\(regionList.regions.count) Regions")
+                        .font(.title)
+                    Text("Filtered by letter: \(letter)")
+                        .font(.title2)
+                    Button("Add fave: \(self.regionToCheck)", action: {
+                        self.appState.addFaveLocation(id: self.locationToFave)
+                    })
+                    List(filtered.sorted()) { region in
+                        NavigationLink(destination: {
+                            RegionDetailView(region: region).environmentObject(self.appState)
+                        }, label: {
+                            Text(region.fullName.capitalized)
+                                .background(self.appState.lastCheckedRegion.value == region ? Color.yellow : Color.white)
+                        })
+                    }
+                }
+            }
+        }.onAppear(perform: {
+            self.appState.getRegions()
+        })
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct RegionDetailView: View {
+    @EnvironmentObject var appState: AppStateContainer
+    
+    let region: Region
+    
+    var body: some View {
+        VStack {
+            if let locations = self.appState.lastCheckedLocations.value,
+               let _ = self.appState.userFaveLocations {
+                List(locations.locations.sorted()) { location in
+                    Text("\(location.name) (\(location.id))")
+                        .background(self.appState.isLocationFavorite(location) ? Color.green : Color.white)
+                }
+            } else {
+                Text("Loading...")
+            }
+        }
+        .navigationTitle(self.region.fullName.capitalized)
+        .onAppear(perform: {
+            self.appState.getLocationsForRegion(named: self.region.name)
+            self.appState.getFaveLocations()
+        })
     }
 }

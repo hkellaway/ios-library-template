@@ -1,0 +1,23 @@
+{
+  "name": "LibraryTemplate",
+  "version": "0.1.0",
+  "summary": "Template for creating a new iOS library",
+  "description": "Template for creating a new iOS library.",
+  "homepage": "TODO",
+  "authors": {
+    "TODO": "TODO"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://github.com/hkellaway/ios-library-template.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Sources/LibraryTemplate/*.{swift}"
+}
