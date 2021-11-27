@@ -12,6 +12,8 @@
 		DC373195272374F30091C0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373194272374F30091C0AF /* Assets.xcassets */; };
 		DC373198272374F30091C0AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC373197272374F30091C0AF /* Preview Assets.xcassets */; };
 		DC3731AB272378C60091C0AF /* LibraryTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = DC3731AA272378C60091C0AF /* LibraryTemplate */; };
+		DC3731EF274ED9760091C0AF /* PinballMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */; };
+		DC3731F1274EFDB30091C0AF /* AppStateContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DC373192272374F10091C0AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC373194272374F30091C0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC373197272374F30091C0AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinballMapAPI.swift; sourceTree = "<group>"; };
+		DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				DC373190272374F10091C0AF /* LibraryTemplateDemoApp.swift */,
 				DC373192272374F10091C0AF /* ContentView.swift */,
+				DC3731F0274EFDB30091C0AF /* AppStateContainer.swift */,
+				DC3731EE274ED9760091C0AF /* PinballMapAPI.swift */,
 				DC373194272374F30091C0AF /* Assets.xcassets */,
 				DC373196272374F30091C0AF /* Preview Content */,
 			);
@@ -145,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3731F1274EFDB30091C0AF /* AppStateContainer.swift in Sources */,
+				DC3731EF274ED9760091C0AF /* PinballMapAPI.swift in Sources */,
 				DC373193272374F10091C0AF /* ContentView.swift in Sources */,
 				DC373191272374F10091C0AF /* LibraryTemplateDemoApp.swift in Sources */,
 			);
