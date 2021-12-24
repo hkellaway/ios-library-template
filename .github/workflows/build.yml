@@ -21,8 +21,8 @@ jobs:
       run: swift build -v
     - name: Test package
       run: swift test -v
-#    - name: Build Demo project
-#      working-directory: Demo
-#      run: /usr/bin/xcodebuild -project "$DEMO_XC_PROJ" -scheme "$DEMO_XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 12'
     - name: Lint podspec
       run: pod lib lint --quick
+    - name: Build Demo project
+      working-directory: ./Demo
+      run: xcodebuild -project $DEMO_XC_PROJ -scheme $DEMO_XC_SCHEME -destination 'platform=iOS Simulator,name=iPhone 12' 
