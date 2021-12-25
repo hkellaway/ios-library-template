@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: [macos-latest]
     env:
-      XC_VERSION: ${{ '12.4' }}
+      XC_VERSION: ${{ '13.0' }}
       XC_PROJ: ${{ 'LibraryTemplate.xcodeproj' }}
       XC_SCHEME: ${{ 'LibraryTemplate' }}
       DEMO_XC_PROJ: ${{ 'LibraryTemplateDemo.xcodeproj' }}
@@ -25,4 +25,4 @@ jobs:
       run: pod lib lint --quick
     - name: Build Demo project
       working-directory: ./Demo
-      run: xcodebuild -project $DEMO_XC_PROJ -scheme $DEMO_XC_SCHEME -destination 'platform=iOS Simulator,name=iPhone 12' 
+      run: xcodebuild -project $DEMO_XC_PROJ -scheme $DEMO_XC_SCHEME -destination 'platform=iOS Simulator,name=iPhone 13' 
